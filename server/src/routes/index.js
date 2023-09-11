@@ -9,6 +9,10 @@ const postVideoGames = require("../controllers/postVideoGames");
 
 const router = Router();
 
+router.get("/", (req, res) => {
+  res.send("Welcome to mi encuesta's api");
+});
+
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 router.get("/videogames", (req, res) => {
